@@ -1,0 +1,153 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, p {
+    text-align: center;
+}
+p {
+    font-size: 24px;
+}
+
+.links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.links a {
+    color: #2a75f3;
+    font-size: 20px;
+    margin: 0 15px;
+    text-decoration: underline;
+    font-weight: normal;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+/* Teaser figure styling */
+figure.teaser {
+    text-align: center;
+    margin: 20px auto;
+}
+
+figure.teaser img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure.teaser figcaption {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Abstract section styling */
+.abstract {
+    margin: 20px auto;
+    /* text-align: center; */
+    max-width: 1000px;
+    font-size: 24px;  /* Increased font size for abstract text */
+    line-height: 1.5;
+}
+  
+.abstract h2 {
+    font-size: 32px;  /* Increased font size for abstract heading */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.abstract p {
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Approach section styling */
+.approach {
+    margin: 20px auto;
+    /* text-align: center; */
+    max-width: 1000px;
+    font-size: 24px;  /* Increased font size for abstract text */
+    line-height: 1.5;
+}
+  
+.approach h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.approach p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.approach figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Results section styling */
+.results {
+    margin: 20px auto;
+    /* text-align: center; */
+    max-width: 1000px;
+    font-size: 24px;  
+    line-height: 1.5;
+}
+  
+.results h2 {
+    font-size: 32px;  
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.results p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.results figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.results figure figcaption {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* BibTeX section styling */
+.bibtex {
+
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.bibtex h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bibtex p {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Added round corners */
+    font-size: 15px;
+    text-align: left;
+    white-space: pre-wrap; /* Preserves line breaks and spacing */
+}

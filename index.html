@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PartSticker</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1>PartSticker: Generating Parts of Objects for Rapid Prototyping</h1>
+
+        <div class="links">
+            <a href="https://momoaolig.github.io">Mo Zhou</a>
+            <a href="https://joshmyersdean.github.io">Josh Myers-Dean</a>
+            <a href="https://dannagurari.colorado.edu">Danna Gurari</a> 
+        </div>  
+
+        <p>University of Colorado Boulder</p>
+
+        <figure class="teaser">
+            <img src="figures/teaser.png" alt="Teaser Image">
+            <!-- <figcaption>A sneak peek of our project</figcaption> -->
+        </figure>
+        
+        <div class="links">
+            <a href="https:" style="font-size: 24px;">[Paper]</a>
+            <a href="https://" style="font-size: 24px;">[Github]</a>
+        </div>
+
+    </div>
+
+    <section class="abstract">
+        <h2>Abstract</h2>
+        <p>Design prototyping involves creating mockups of products or concepts to gather feedback and iterate on ideas. 
+            While prototyping often requires specific parts of objects, such as when constructing a novel creature for a video game, 
+            existing text-to-image methods tend to only generate entire objects. To address this, we propose a novel task and method 
+            of "part sticker generation", which entails generating an isolated part of an object on a neutral background. 
+            Experiments demonstrate our method outperforms state-of-the-art baselines with respect to realism and text alignment, 
+            while preserving object-level generation capabilities. </p>
+    </section>
+
+    <section class="approach">
+        <h2>Approach</h2>
+
+        <p>We design a pipeline to support our task of part sticker generation, by generating a single part specified in a 
+            text prompt that is `pasted' on a neutral, gray background. The pipeline consists of two key steps.  
+            First, given an image with associated object and part segmentation masks, we localize each desired part and place it in the center of a gray background. 
+            Second, for each localized image region, we pair it with a prompt describing the region.  All resulting image-prompt 
+            pairs are then used to train a text-to-image diffusion model.  We hypothesize that such a pipeline would enable a 
+            trained model to generate diverse renderings for each part type because existing datasets offer many diverse part segmentations, 
+            including of the same types observed across different objects (e.g., an eye can be found in a frog and dog). 
+        </p>
+        <figure>
+            <img src="figures/architecture.png" alt="Architecture Image">
+        </figure>
+    </section>
+
+    <section class="results">
+        <h2>Results</h2>
+        <p>
+            Qualitative results showing examples of generated images given text prompts (left) and the average image of 100 generated samples 
+            from a given method (left). Overall, we observe that PartSticker is the only method capable of consistently generating only the requested 
+            part on a neutral background with a high degree of realism. The bottom three rows represent out-of-distribution scenarios for PartSticker: 
+            generation of an object and two out-of-distribution parts. (SD stands for Stable Diffusion).
+        </p>
+        <figure>
+            <img src="figures/qualitative.png" alt="Results Image">
+        </figure>
+    </section>
+
+    <section class="bibtex">
+    <h2>BibTex</h2>
+    <p>
+        @inproceedings{mo2024cvprworkshop,
+        title = {PartSticker: Generating Parts of Objects for Rapid Prototyping},
+        author = {Mo, Zhou and Josh, Myers-Dean and Danna, Gurari},
+        year = {2025}
+        }
+    </p>
+    </section>
+ </body>
+</html>
