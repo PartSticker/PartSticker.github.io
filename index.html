@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PartSticker</title>
+    <title>PartStickers</title>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <div class="container">
-        <h1>PartSticker: Generating Parts of Objects for Rapid Prototyping</h1>
+        <h1>PartStickers: Generating Parts of Objects for Rapid Prototyping</h1>
 
         <div class="links">
             <a href="https://momoaolig.github.io">Mo Zhou</a>
@@ -31,11 +31,12 @@
     <section class="abstract">
         <h2>Abstract</h2>
         <p>Design prototyping involves creating mockups of products or concepts to gather feedback and iterate on ideas. 
-            While prototyping often requires specific parts of objects, such as when constructing a novel creature for a video game, 
-            existing text-to-image methods tend to only generate entire objects. To address this, we propose a novel task and method 
-            of "part sticker generation", which entails generating an isolated part of an object on a neutral background. 
+            While prototyping often requires specific parts of objects, such as when constructing a novel creature for a video 
+            game, existing text-to-image methods tend to only generate entire objects. To address this, we propose a novel task 
+            and method of ``part sticker generation", which entails generating an isolated part of an object on a neutral background. 
             Experiments demonstrate our method outperforms state-of-the-art baselines with respect to realism and text alignment, 
-            while preserving object-level generation capabilities. </p>
+            while preserving object-level generation capabilities.
+        </p>
     </section>
 
     <section class="approach">
@@ -58,23 +59,26 @@
         <h2>Results</h2>
         <p>
             Qualitative results showing examples of generated images given text prompts (left) and the average image of 100 generated samples 
-            from a given method (left). Overall, we observe that PartSticker is the only method capable of consistently generating only the requested 
-            part on a neutral background with a high degree of realism. The bottom three rows represent out-of-distribution scenarios for PartSticker: 
+            from a given method (left). Overall, we observe that PartStickers is the only method capable of consistently generating only the requested 
+            part on a neutral background with a high degree of realism. The bottom three rows represent out-of-distribution scenarios for PartStickers: 
             generation of an object and two out-of-distribution parts. (SD stands for Stable Diffusion).
         </p>
         <figure>
-            <img src="figures/qualitative.png" alt="Results Image">
+            <img src="figures/qualitative.pdf" alt="Results Image">
         </figure>
     </section>
 
     <section class="bibtex">
     <h2>BibTex</h2>
     <p>
-        @inproceedings{mo2024cvprworkshop,
-        title = {PartSticker: Generating Parts of Objects for Rapid Prototyping},
-        author = {Mo, Zhou and Josh, Myers-Dean and Danna, Gurari},
-        year = {2025}
-        }
+        @inproceedings{zhou2025partstickers,
+            author = {Mo, Zhou and Josh, Myers-Dean and Danna, Gurari},
+            title = {PartStickers: Generating Parts of Objects for Rapid Prototyping},
+            booktitle = {Proceedings of the CVEU Workshop at CVPR 2025},
+            year      = {2025},
+            publisher = {IEEE},
+            address   = {Nashville, TN, USA},
+          }
     </p>
     </section>
  </body>
